@@ -3,7 +3,29 @@ import CoreData
 import SwiftUI
 
 extension TodoEntity {
-    enum Category: Int16 {
+    
+    //NSmanagedObjectContextを利用してデータベース処理をする。インスタンスをtodoに入れて、例外処理で保存する。
+    static func create(in managedObjectContext: NSManagedObjectContext,
+                           category: Category,
+                           task: String,
+                           time: Date? = Date()){
+            let todo = self.init(context: managedObjectContext)
+            print(task)
+            todo.time = time
+            todo.category = category.rawValue
+            todo.task = task
+            todo.state = State.todo.rawValue
+            todo.id = UUID().uuidString
+            
+            do {
+                try  managedObjectContext.save()
+            } catch {
+                let nserror = error as NSError
+                fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+            }
+        }
+
+        enum Category: Int16 {
         case ImpUrg_1st     // Important & Urgent (第Ⅰ領域）
         case ImpNUrg_2nd    // Important & Not Urgent (第Ⅱ領域）
         case NImpUrg_3rd    // Not Important & Urgent（第Ⅲ領域）

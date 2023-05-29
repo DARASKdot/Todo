@@ -19,6 +19,8 @@
 		72ED2F352A239A2000ED18E1 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED2F342A239A2000ED18E1 /* UserView.swift */; };
 		72ED2F372A2476D000ED18E1 /* TodoEntity+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED2F362A2476D000ED18E1 /* TodoEntity+Extension.swift */; };
 		72ED2F392A2478EA00ED18E1 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED2F382A2478EA00ED18E1 /* CategoryView.swift */; };
+		72ED2F3B2A24BDC100ED18E1 /* QuickNewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED2F3A2A24BDC100ED18E1 /* QuickNewTask.swift */; };
+		72ED2F3D2A24C46B00ED18E1 /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED2F3C2A24C46B00ED18E1 /* TodoList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		72ED2F342A239A2000ED18E1 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		72ED2F362A2476D000ED18E1 /* TodoEntity+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoEntity+Extension.swift"; sourceTree = "<group>"; };
 		72ED2F382A2478EA00ED18E1 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		72ED2F3A2A24BDC100ED18E1 /* QuickNewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickNewTask.swift; sourceTree = "<group>"; };
+		72ED2F3C2A24C46B00ED18E1 /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,8 @@
 				723B304B2A172B910025E454 /* CheckBox.swift */,
 				72ED2F342A239A2000ED18E1 /* UserView.swift */,
 				72ED2F382A2478EA00ED18E1 /* CategoryView.swift */,
+				72ED2F3A2A24BDC100ED18E1 /* QuickNewTask.swift */,
+				72ED2F3C2A24C46B00ED18E1 /* TodoList.swift */,
 				727F7A242A1862FF0009A2E0 /* Extension */,
 				723B303E2A1676D40025E454 /* Assets.xcassets */,
 				723B30402A1676D40025E454 /* Todo.entitlements */,
@@ -172,7 +178,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				723B30362A1676D30025E454 /* TodoApp.swift in Sources */,
+				72ED2F3B2A24BDC100ED18E1 /* QuickNewTask.swift in Sources */,
 				723B303B2A1676D30025E454 /* Todo.xcdatamodeld in Sources */,
+				72ED2F3D2A24C46B00ED18E1 /* TodoList.swift in Sources */,
 				723B304C2A172B910025E454 /* CheckBox.swift in Sources */,
 				72ED2F352A239A2000ED18E1 /* UserView.swift in Sources */,
 				72ED2F392A2478EA00ED18E1 /* CategoryView.swift in Sources */,
