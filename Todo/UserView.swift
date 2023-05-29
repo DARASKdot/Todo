@@ -1,22 +1,38 @@
 import SwiftUI
 
 struct UserView: View {
-    @State var text:String
+    
+    let image: Image
+    let userName: String
+    
     
     var body: some View {
-        VStack(alignment: .leading){
-            Text("Hello!")
-            Text("だらすく")
-                .font(.title)
-            TextField("文字入れてね", text: $text)
-                .multilineTextAlignment(.trailing)
+        HStack {
             
+            VStack(alignment: .leading){
+                Text("こんにちは")
+                    .foregroundColor(Color.tTitle)
+                    .font(.footnote)
+                Text("\(userName)")
+                    .foregroundColor(Color.tTitle)
+                    .font(.title)
+            }
+            Spacer()
+            image
+                .resizable()
+                .frame(width:60, height:60)
+                .clipShape(Circle())
         }
+        .padding()
+        .background(Color.tBackground)
     }
 }
 
 struct UserView_Previews: PreviewProvider {
     static var previews: some View {
-        UserView(text: "test")
+        Group {
+            UserView(image: Image("profile"), userName: "User Name")
+            Circle()
+        }
     }
 }

@@ -17,6 +17,8 @@
 		723B304C2A172B910025E454 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723B304B2A172B910025E454 /* CheckBox.swift */; };
 		727F7A262A1863290009A2E0 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727F7A252A1863290009A2E0 /* ColorExtension.swift */; };
 		72ED2F352A239A2000ED18E1 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED2F342A239A2000ED18E1 /* UserView.swift */; };
+		72ED2F372A2476D000ED18E1 /* TodoEntity+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED2F362A2476D000ED18E1 /* TodoEntity+Extension.swift */; };
+		72ED2F392A2478EA00ED18E1 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED2F382A2478EA00ED18E1 /* CategoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		723B304B2A172B910025E454 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		727F7A252A1863290009A2E0 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		72ED2F342A239A2000ED18E1 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		72ED2F362A2476D000ED18E1 /* TodoEntity+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TodoEntity+Extension.swift"; sourceTree = "<group>"; };
+		72ED2F382A2478EA00ED18E1 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,7 @@
 				723B30492A1713600025E454 /* CategoryImage.swift */,
 				723B304B2A172B910025E454 /* CheckBox.swift */,
 				72ED2F342A239A2000ED18E1 /* UserView.swift */,
+				72ED2F382A2478EA00ED18E1 /* CategoryView.swift */,
 				727F7A242A1862FF0009A2E0 /* Extension */,
 				723B303E2A1676D40025E454 /* Assets.xcassets */,
 				723B30402A1676D40025E454 /* Todo.entitlements */,
@@ -91,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				727F7A252A1863290009A2E0 /* ColorExtension.swift */,
+				72ED2F362A2476D000ED18E1 /* TodoEntity+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -169,9 +175,11 @@
 				723B303B2A1676D30025E454 /* Todo.xcdatamodeld in Sources */,
 				723B304C2A172B910025E454 /* CheckBox.swift in Sources */,
 				72ED2F352A239A2000ED18E1 /* UserView.swift in Sources */,
+				72ED2F392A2478EA00ED18E1 /* CategoryView.swift in Sources */,
 				723B303D2A1676D30025E454 /* ContentView.swift in Sources */,
 				723B304A2A1713600025E454 /* CategoryImage.swift in Sources */,
 				727F7A262A1863290009A2E0 /* ColorExtension.swift in Sources */,
+				72ED2F372A2476D000ED18E1 /* TodoEntity+Extension.swift in Sources */,
 				723B30382A1676D30025E454 /* Persistence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

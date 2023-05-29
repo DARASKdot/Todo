@@ -1,9 +1,3 @@
-//
-//  Persistence.swift
-//  Todo
-//
-//  Created by Hiroshi Inoue on R 5/05/19.
-//
 
 import CoreData
 
