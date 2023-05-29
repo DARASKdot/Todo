@@ -36,6 +36,8 @@ struct TodoList: View {
 
 struct TodoList_Previews: PreviewProvider {
     
+    
+    //swiftのバージョンが新しいとAppdelegateを使用してcontextが作成できないので対策。
     static let container = PersistenceController.shared.container
     static let context = container.viewContext
     
