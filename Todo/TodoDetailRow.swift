@@ -5,9 +5,13 @@ struct TodoDetailRow: View {
     
     @ObservedObject var todo: TodoEntity
     
+    var hideIcon = false
+    
     var body: some View {
         HStack {
-            CategoryImage(TodoEntity.Category(rawValue: todo.category))
+            if !hideIcon {
+                CategoryImage(TodoEntity.Category(rawValue: todo.category))
+            }
             CheckBox(checked: Binding(get: {
                 self.todo.state == TodoEntity.State.done.rawValue
             }, set: {
@@ -19,7 +23,17 @@ struct TodoDetailRow: View {
                     Text(self.todo.task ?? "no title")
                 }
             }.foregroundColor(self.todo.state == TodoEntity.State.done.rawValue ? .secondary : .primary)
-        }
+        }.gesture(DragGesture().onChanged({ value in
+            if value.predictedEndTranslation.width > 200 {
+                if self.todo.state != TodoEntity.State.done.rawValue {
+                    self.todo.state = TodoEntity.State.done.rawValue
+                }
+            } else if value.predictedEndTranslation.width < -200 {
+                if self.todo.state != TodoEntity.State.todo.rawValue {
+                    self.todo.state = TodoEntity.State.todo.rawValue
+                }
+            }
+        }))
     }
 }
 

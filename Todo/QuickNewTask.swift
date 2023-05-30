@@ -6,9 +6,10 @@ struct QuickNewTask: View {
     let category: TodoEntity.Category
     
     @State var newTask: String = ""
+    @Environment(\.managedObjectContext) var viewContext
     
     fileprivate func addNewTask() {
-        self.newTask = ""
+        TodoEntity.create(in: self.viewContext, category: self.category, task: self.newTask)
     }
     
     fileprivate func cancelTask() {
@@ -38,7 +39,12 @@ struct QuickNewTask: View {
 }
 
 struct QuickNewTask_Previews: PreviewProvider {
+    
+    static let container = PersistenceController.shared.container
+    static let context = container.viewContext
+
     static var previews: some View {
         QuickNewTask(category: .ImpUrg_1st)
+            .environment(\.managedObjectContext, context)
     }
 }
