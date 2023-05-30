@@ -26,13 +26,13 @@ struct NewTask: View {
         NavigationView {
             Form {
                 Section(header: Text("タスク名").foregroundColor(.black)) {
-                    TextField("タスクを入力", text: $task)
+                    TextField("タスクを入力", text: $task).foregroundColor(.gray)
                 }
                 
                 Section(header: Toggle(isOn: Binding(isNotNil:$time,defaultValue:Date())){Text("時間を指定する").foregroundColor(.black)}) {
                     
                     if time != nil {
-                        DatePicker(selection: Binding($time,Date()),label: { Text("日時") })
+                        DatePicker(selection: Binding($time,Date()),label: { Text("日時").foregroundColor(.black) })
                     } else {
                         Text("日時未設定")
                     }
