@@ -21,6 +21,7 @@
 		72ED2F392A2478EA00ED18E1 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED2F382A2478EA00ED18E1 /* CategoryView.swift */; };
 		72ED2F3B2A24BDC100ED18E1 /* QuickNewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED2F3A2A24BDC100ED18E1 /* QuickNewTask.swift */; };
 		72ED2F3D2A24C46B00ED18E1 /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED2F3C2A24C46B00ED18E1 /* TodoList.swift */; };
+		72ED2F3F2A258BDB00ED18E1 /* TodoDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED2F3E2A258BDB00ED18E1 /* TodoDetailRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		72ED2F382A2478EA00ED18E1 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		72ED2F3A2A24BDC100ED18E1 /* QuickNewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickNewTask.swift; sourceTree = "<group>"; };
 		72ED2F3C2A24C46B00ED18E1 /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
+		72ED2F3E2A258BDB00ED18E1 /* TodoDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				72ED2F382A2478EA00ED18E1 /* CategoryView.swift */,
 				72ED2F3A2A24BDC100ED18E1 /* QuickNewTask.swift */,
 				72ED2F3C2A24C46B00ED18E1 /* TodoList.swift */,
+				72ED2F3E2A258BDB00ED18E1 /* TodoDetailRow.swift */,
 				727F7A242A1862FF0009A2E0 /* Extension */,
 				723B303E2A1676D40025E454 /* Assets.xcassets */,
 				723B30402A1676D40025E454 /* Todo.entitlements */,
@@ -187,6 +190,7 @@
 				723B303D2A1676D30025E454 /* ContentView.swift in Sources */,
 				723B304A2A1713600025E454 /* CategoryImage.swift in Sources */,
 				727F7A262A1863290009A2E0 /* ColorExtension.swift in Sources */,
+				72ED2F3F2A258BDB00ED18E1 /* TodoDetailRow.swift in Sources */,
 				72ED2F372A2476D000ED18E1 /* TodoEntity+Extension.swift in Sources */,
 				723B30382A1676D30025E454 /* Persistence.swift in Sources */,
 			);

@@ -1,9 +1,3 @@
-//
-//  CategoryView.swift
-//  Todo
-//
-//  Created by Hiroshi Inoue on R 5/05/29.
-//
 
 import SwiftUI
 
