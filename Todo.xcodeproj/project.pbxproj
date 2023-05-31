@@ -24,6 +24,10 @@
 		72ED2F3F2A258BDB00ED18E1 /* TodoDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED2F3E2A258BDB00ED18E1 /* TodoDetailRow.swift */; };
 		72ED2F412A261A0A00ED18E1 /* NewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED2F402A261A0A00ED18E1 /* NewTask.swift */; };
 		72ED2F432A261E7900ED18E1 /* Binding+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED2F422A261E7900ED18E1 /* Binding+Extension.swift */; };
+		72ED2F452A26DDF800ED18E1 /* EditTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED2F442A26DDF800ED18E1 /* EditTask.swift */; };
+		72ED2F472A26E6EC00ED18E1 /* TaskToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED2F462A26E6EC00ED18E1 /* TaskToday.swift */; };
+		72ED2F492A26E79600ED18E1 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED2F482A26E79600ED18E1 /* Date+Extension.swift */; };
+		72ED2F4B2A26E98A00ED18E1 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED2F4A2A26E98A00ED18E1 /* RoundedCorners.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,10 @@
 		72ED2F3E2A258BDB00ED18E1 /* TodoDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailRow.swift; sourceTree = "<group>"; };
 		72ED2F402A261A0A00ED18E1 /* NewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTask.swift; sourceTree = "<group>"; };
 		72ED2F422A261E7900ED18E1 /* Binding+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Extension.swift"; sourceTree = "<group>"; };
+		72ED2F442A26DDF800ED18E1 /* EditTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTask.swift; sourceTree = "<group>"; };
+		72ED2F462A26E6EC00ED18E1 /* TaskToday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskToday.swift; sourceTree = "<group>"; };
+		72ED2F482A26E79600ED18E1 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		72ED2F4A2A26E98A00ED18E1 /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +97,9 @@
 				72ED2F3C2A24C46B00ED18E1 /* TodoList.swift */,
 				72ED2F3E2A258BDB00ED18E1 /* TodoDetailRow.swift */,
 				72ED2F402A261A0A00ED18E1 /* NewTask.swift */,
+				72ED2F442A26DDF800ED18E1 /* EditTask.swift */,
+				72ED2F462A26E6EC00ED18E1 /* TaskToday.swift */,
+				72ED2F4A2A26E98A00ED18E1 /* RoundedCorners.swift */,
 				727F7A242A1862FF0009A2E0 /* Extension */,
 				723B303E2A1676D40025E454 /* Assets.xcassets */,
 				723B30402A1676D40025E454 /* Todo.entitlements */,
@@ -110,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				727F7A252A1863290009A2E0 /* ColorExtension.swift */,
+				72ED2F482A26E79600ED18E1 /* Date+Extension.swift */,
 				72ED2F362A2476D000ED18E1 /* TodoEntity+Extension.swift */,
 				72ED2F422A261E7900ED18E1 /* Binding+Extension.swift */,
 			);
@@ -188,10 +200,12 @@
 			files = (
 				723B30362A1676D30025E454 /* TodoApp.swift in Sources */,
 				72ED2F3B2A24BDC100ED18E1 /* QuickNewTask.swift in Sources */,
+				72ED2F452A26DDF800ED18E1 /* EditTask.swift in Sources */,
 				723B303B2A1676D30025E454 /* Todo.xcdatamodeld in Sources */,
 				72ED2F3D2A24C46B00ED18E1 /* TodoList.swift in Sources */,
 				72ED2F432A261E7900ED18E1 /* Binding+Extension.swift in Sources */,
 				723B304C2A172B910025E454 /* CheckBox.swift in Sources */,
+				72ED2F472A26E6EC00ED18E1 /* TaskToday.swift in Sources */,
 				72ED2F352A239A2000ED18E1 /* UserView.swift in Sources */,
 				72ED2F392A2478EA00ED18E1 /* CategoryView.swift in Sources */,
 				723B303D2A1676D30025E454 /* ContentView.swift in Sources */,
@@ -200,7 +214,9 @@
 				727F7A262A1863290009A2E0 /* ColorExtension.swift in Sources */,
 				72ED2F3F2A258BDB00ED18E1 /* TodoDetailRow.swift in Sources */,
 				72ED2F372A2476D000ED18E1 /* TodoEntity+Extension.swift in Sources */,
+				72ED2F4B2A26E98A00ED18E1 /* RoundedCorners.swift in Sources */,
 				723B30382A1676D30025E454 /* Persistence.swift in Sources */,
+				72ED2F492A26E79600ED18E1 /* Date+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
