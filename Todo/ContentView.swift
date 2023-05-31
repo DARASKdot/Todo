@@ -26,12 +26,7 @@ struct ContentView: View {
             .edgesIgnoringSafeArea(.bottom)
     }
 }
-    
-    
-    
-    
-    
-    
+
 struct ContentView_Previews: PreviewProvider {
     static let container = PersistenceController.shared.container
     static let context = container.viewContext
