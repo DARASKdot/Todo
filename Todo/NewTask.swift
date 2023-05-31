@@ -34,7 +34,7 @@ struct NewTask: View {
                     if time != nil {
                         DatePicker(selection: Binding($time,Date()),label: { Text("日時").foregroundColor(.black) })
                     } else {
-                        Text("日時未設定")
+                        Text("日時未設定").foregroundColor(.gray)
                     }
                 }
                 
@@ -60,12 +60,14 @@ struct NewTask: View {
                 }
             }.navigationBarTitle("タスクの追加")
                 .navigationBarItems(trailing: Button(action: {
-                    TodoEntity.create(in: self.viewContext,
-                                      category: TodoEntity.Category(rawValue: self.category) ?? .ImpUrg_1st,
-                                      task: self.task,
-                                      time: self.time)
-                    self.save()
-                    self.presentationMode.wrappedValue.dismiss()
+                    if self.task != "" {
+                        TodoEntity.create(in: self.viewContext,
+                                          category: TodoEntity.Category(rawValue: self.category) ?? .ImpUrg_1st,
+                                          task: self.task,
+                                          time: self.time)
+                        self.save()
+                        self.presentationMode.wrappedValue.dismiss()
+                    }
                 }) {
                     Text("保存")
                         .foregroundColor(.tBlue)

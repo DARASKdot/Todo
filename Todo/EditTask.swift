@@ -29,7 +29,7 @@ struct EditTask: View {
     var body: some View {
         Form {
             Section(header: Text("タスク名").foregroundColor(.black)) {
-                TextField("タスクを入力", text: Binding($todo.task,"new task")).foregroundColor(.gray)
+                TextField("タスクを入力", text: Binding($todo.task,"new task")).foregroundColor(.black)
             }
             
             Section(header: Toggle(isOn: Binding(isNotNil:$todo.time,defaultValue:Date())){Text("時間を指定する").foregroundColor(.black)}) {
@@ -37,7 +37,7 @@ struct EditTask: View {
                 if todo.time != nil {
                     DatePicker(selection: Binding($todo.time,Date()),label: { Text("日時").foregroundColor(.black) })
                 } else {
-                    Text("日時未設定")
+                    Text("日時未設定").foregroundColor(.gray)
                 }
             }
             

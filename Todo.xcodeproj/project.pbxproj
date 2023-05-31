@@ -28,6 +28,8 @@
 		72ED2F472A26E6EC00ED18E1 /* TaskToday.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED2F462A26E6EC00ED18E1 /* TaskToday.swift */; };
 		72ED2F492A26E79600ED18E1 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED2F482A26E79600ED18E1 /* Date+Extension.swift */; };
 		72ED2F4B2A26E98A00ED18E1 /* RoundedCorners.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED2F4A2A26E98A00ED18E1 /* RoundedCorners.swift */; };
+		72ED2F4D2A2705FA00ED18E1 /* KeyboardObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED2F4C2A2705FA00ED18E1 /* KeyboardObserver.swift */; };
+		72ED2F4F2A27068200ED18E1 /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72ED2F4E2A27068200ED18E1 /* UIApplication+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		72ED2F462A26E6EC00ED18E1 /* TaskToday.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskToday.swift; sourceTree = "<group>"; };
 		72ED2F482A26E79600ED18E1 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		72ED2F4A2A26E98A00ED18E1 /* RoundedCorners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorners.swift; sourceTree = "<group>"; };
+		72ED2F4C2A2705FA00ED18E1 /* KeyboardObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserver.swift; sourceTree = "<group>"; };
+		72ED2F4E2A27068200ED18E1 /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 				72ED2F442A26DDF800ED18E1 /* EditTask.swift */,
 				72ED2F462A26E6EC00ED18E1 /* TaskToday.swift */,
 				72ED2F4A2A26E98A00ED18E1 /* RoundedCorners.swift */,
+				72ED2F4C2A2705FA00ED18E1 /* KeyboardObserver.swift */,
 				727F7A242A1862FF0009A2E0 /* Extension */,
 				723B303E2A1676D40025E454 /* Assets.xcassets */,
 				723B30402A1676D40025E454 /* Todo.entitlements */,
@@ -124,6 +129,7 @@
 				72ED2F482A26E79600ED18E1 /* Date+Extension.swift */,
 				72ED2F362A2476D000ED18E1 /* TodoEntity+Extension.swift */,
 				72ED2F422A261E7900ED18E1 /* Binding+Extension.swift */,
+				72ED2F4E2A27068200ED18E1 /* UIApplication+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -208,8 +214,10 @@
 				72ED2F472A26E6EC00ED18E1 /* TaskToday.swift in Sources */,
 				72ED2F352A239A2000ED18E1 /* UserView.swift in Sources */,
 				72ED2F392A2478EA00ED18E1 /* CategoryView.swift in Sources */,
+				72ED2F4D2A2705FA00ED18E1 /* KeyboardObserver.swift in Sources */,
 				723B303D2A1676D30025E454 /* ContentView.swift in Sources */,
 				723B304A2A1713600025E454 /* CategoryImage.swift in Sources */,
+				72ED2F4F2A27068200ED18E1 /* UIApplication+Extension.swift in Sources */,
 				72ED2F412A261A0A00ED18E1 /* NewTask.swift in Sources */,
 				727F7A262A1863290009A2E0 /* ColorExtension.swift in Sources */,
 				72ED2F3F2A258BDB00ED18E1 /* TodoDetailRow.swift in Sources */,

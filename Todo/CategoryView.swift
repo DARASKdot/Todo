@@ -12,11 +12,22 @@ struct CategoryView: View {
     
     @State var addNewTask = false
     
+    fileprivate func update() {
+        self.numberOfTasks = TodoEntity.count(in: self.viewContext, category: self.category)
+    }
+    
     var body: some View {
+        
+        let gradient = Gradient(colors: [category.color(),category.color().opacity(0.8)])
+        
+        let linear = LinearGradient(gradient: gradient,
+                                    startPoint: .top,
+                                    endPoint: .bottom)
+        
         VStack(alignment: .leading) {
             Image(systemName: category.image())
                 .font(.largeTitle)
-                .sheet(isPresented: $showList) { TodoList(category: self.category)
+                .sheet(isPresented: $showList, onDismiss: {self.update()}) { TodoList(category: self.category)
                         .environment(\.managedObjectContext, self.viewContext)
                 }
             
@@ -26,19 +37,22 @@ struct CategoryView: View {
                 self.addNewTask = true
             } ) {
                 Image(systemName: "plus")
-            }.sheet(isPresented: $addNewTask) {
+            }.sheet(isPresented: $addNewTask, onDismiss: {self.update()}) {
                 NewTask(category: self.category.rawValue)
                     .environment(\.managedObjectContext, self.viewContext)
             }
             Spacer()
         }
-        .padding()
+            .padding()
         .frame(maxWidth: .infinity,minHeight: 150)
-            .foregroundColor(.white)
-            .background(category.color())
+        .foregroundColor(.white)
+            .background(linear)
             .cornerRadius(20)
             .onTapGesture {
                 self.showList = true
+            }
+            .onAppear {
+                self.update()
             }
     }
 }

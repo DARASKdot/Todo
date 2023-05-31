@@ -20,12 +20,16 @@ struct QuickNewTask: View {
         HStack {
             TextField("新しいタスクを入力", text: $newTask) {
                 self.addNewTask()
-            }.textFieldStyle(RoundedBorderTextFieldStyle())
+            }.foregroundColor(.black).textFieldStyle(RoundedBorderTextFieldStyle())
             
             Button(action: {
-                self.addNewTask()
+                if self.newTask != "" {
+                    self.addNewTask()
+                    self.cancelTask()
+                }
             } ) {
                 Text("追加")
+                    .foregroundColor(.blue)
             }
             
             Button(action: {
